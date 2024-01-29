@@ -32,7 +32,7 @@ jobs:
         
     - name: Debug _site content
       run: |
-        ls -R _site
+        ls -R docs/Tips
 
     - name: Copy files to GitHub workspace
       run: |

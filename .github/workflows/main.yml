@@ -14,7 +14,9 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v1  # Corrección aquí, cambié v2 por v1
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7.4  # Especifica la versión de Ruby que deseas utilizar
 
     - name: Install dependencies
       run: |

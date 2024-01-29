@@ -1,3 +1,23 @@
-title: Tip_Of_The_Week
+# _config.yml
+
+# Configuración de Jekyll
+markdown: kramdown
+theme: jekyll-theme-primer  # Cambia al tema que prefieras
+
+# Configuración de GitHub Pages
+repository: arandanos80/Tip_Of_The_Week/  # Cambia a tu nombre de usuario y nombre del repositorio
+baseurl: ""  # Si tu repositorio no está en una subcarpeta, deja esto en blanco
+url: "https://arandanos80.github.io"  # Cambia a tu nombre de usuario
+source: docs  # Carpeta que contiene tu contenido
+destination: ./docs/_site  # Carpeta donde se generará el sitio
+
 plugins:
   - jekyll-feed
+  # Agrega otros plugins según sea necesario
+
+# Configuración de Sass
+sass:
+  sass_dir: _sass
+  style: compressed  # Puedes cambiar esto según tus preferencias
+
+# Otras configuraciones según tus necesidades

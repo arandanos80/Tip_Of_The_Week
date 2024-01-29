@@ -1,0 +1,29 @@
+name: Generate RSS Feed
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v2
+
+    - name: Install dependencies
+      run: |
+        gem install jekyll bundler
+        bundle install
+
+    - name: Build and deploy
+      run: |
+        bundle exec jekyll build
+        cp -r _site/* $GITHUB_WORKSPACE
+      env:
+        GITHUB_WORKSPACE: ${{ github.workspace }}

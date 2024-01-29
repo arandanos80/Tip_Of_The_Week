@@ -1,7 +1,13 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Tip of the week</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+---
+layout: default
+---
+
+<h1>¡Consejos Útiles!</h1>
+
+<ul>
+  {% for tip in site.pages %}
+    {% if tip.path contains 'Tips' %}
+      <li><a href="{{ tip.url }}">{{ tip.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

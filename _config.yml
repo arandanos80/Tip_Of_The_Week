@@ -23,4 +23,8 @@ sass:
   sass_dir: _sass
   style: compressed
 
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/figure
 # Otras configuraciones según tus necesidades

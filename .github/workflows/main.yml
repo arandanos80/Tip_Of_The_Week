@@ -32,4 +32,4 @@ jobs:
         
     - name: Debug _site content
       run: |
-        ls -R docs/_site/Tips
+        ls -R docs/Tips

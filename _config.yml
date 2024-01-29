@@ -12,6 +12,10 @@ destination: ./docs/Tips  # Carpeta donde se generará el sitio
 
 plugins:
   - jekyll-feed
+ 
+ # Configuración del Feed
+feed:
+  path: "/feed.xml"
 
 # Configuración del Tema
 theme:

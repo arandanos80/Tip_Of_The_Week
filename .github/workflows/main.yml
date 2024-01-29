@@ -26,14 +26,14 @@ jobs:
     - name: Build and deploy
       run: |
         bundle exec jekyll build
-        cp -r docs/Tips/* $GITHUB_WORKSPACE
+        cp -r docs/_site/Tips/* $GITHUB_WORKSPACE
       env:
         GITHUB_WORKSPACE: ${{ github.workspace }}
         
     - name: Debug _site content
       run: |
-        ls -R docs/Tips
+        ls -R docs/_site/Tips
 
     - name: Copy files to GitHub workspace
       run: |
-       cp -r docs/Tips/* $GITHUB_WORKSPACE
+       cp -r docs/_site/Tips/* $GITHUB_WORKSPACE

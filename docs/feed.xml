@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Tip of the week</title>
+    <link>https://arandanos80.github.io/Tip_Of_The_Week/</link>
+    <description>Tips semanales sobre programación</description>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <generator>Jekyll</generator>
+
+    {% for post in site.posts %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <link>{{ post.url | absolute_url }}</link>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <description>{{ post.excerpt | xml_escape }}</description>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

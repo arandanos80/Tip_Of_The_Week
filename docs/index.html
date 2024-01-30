@@ -7,7 +7,7 @@ layout: default
 <ul>
   {% for tip in site.pages %}
     {% if tip.path contains 'Tips' %}
-      <li><a href="{{ tip.url }}">{{ tip.title }}</a></li>
+      <li><a href="/Tip_Of_The_Week/{{ tip.url }}">{{ tip.title }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>

@@ -5,21 +5,21 @@ title: "Tip 1: IEnumerable vs IQueryable vs ICollection"
 
 # IEnumerable vs IQueryable vs ICollection
 
-✅ La interfaz <b>IEnumerable<T></b> se utiliza para iterar sobre una colección de un tipo especificado. Proporciona un único método, GetEnumerator(), que devuelve un enumerador que puede recorrer la colección.
+✅ La interfaz <strong>IEnumerable<T></strong> se utiliza para iterar sobre una colección de un tipo especificado. Proporciona un único método, GetEnumerator(), que devuelve un enumerador que puede recorrer la colección.
 
 𝐏𝐮𝐧𝐭𝐨𝐬 𝐜𝐥𝐚𝐯𝐞:<br /> 
-  1️⃣ <b>IEnumerable<T></b> es adecuada para iteraciones en una sola dirección sobre una colección. <br />
+  1️⃣ <strong>IEnumerable<T></strong> es adecuada para iteraciones en una sola dirección sobre una colección. <br />
   2️⃣ Es de solo lectura, lo que significa que no se pueden agregar ni eliminar elementos de la colección.<br />
 <br />
 
-✅ La interfaz <b>IQueryable<T></b> extiende <b>IEnumerable<T></b> y proporciona funcionalidad para consultar datos desde una fuente de datos. Se utiliza principalmente en LINQ to SQL y LINQ to Entities. Las consultas se construyen, pero no se ejecutan hasta que los datos son enumerados.
+✅ La interfaz <strong>IQueryable<T></strong> extiende <strong>IEnumerable<T></strong> y proporciona funcionalidad para consultar datos desde una fuente de datos. Se utiliza principalmente en LINQ to SQL y LINQ to Entities. Las consultas se construyen, pero no se ejecutan hasta que los datos son enumerados.
 
 𝐏𝐮𝐧𝐭𝐨𝐬 𝐜𝐥𝐚𝐯𝐞: <br />
   1️⃣ Adecuada para consultar datos desde una fuente remota, como una base de datos. <br />
   2️⃣ Soporta la ejecución diferida y puede optimizar las consultas.<br />
 <br />
 
-✅ La interfaz </b>ICollection<T></b> extiende <b>IEnumerable<T></b> e <b>IEnumerable</b>. Define métodos para agregar, eliminar y verificar la presencia de elementos (búsquedas). También proporciona propiedades para acceder al número de elementos y determinar si la colección es de solo lectura.
+✅ La interfaz </strong>ICollection<T></strong> extiende <strong>IEnumerable<T></strong> e <strong>IEnumerable</strong>. Define métodos para agregar, eliminar y verificar la presencia de elementos (búsquedas). También proporciona propiedades para acceder al número de elementos y determinar si la colección es de solo lectura.
 
 𝐏𝐮𝐧𝐭𝐨𝐬 𝐜𝐥𝐚𝐯𝐞: <br />
   1️⃣ Soporta operaciones como agregar, eliminar y verificar elementos. <br />

@@ -1,9 +1,7 @@
 ---
 layout: post
-title: "Tip 1: Cómo Formatear una Página"
+title: "Tip 1: 𝐈𝐄𝐧𝐮𝐦𝐞𝐫𝐚𝐛𝐥𝐞 𝐯𝐬 𝐈𝐐𝐮𝐞𝐫𝐲𝐚𝐛𝐥𝐞 𝐯𝐬 𝐈𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧"
 ---
-
-¡Bienvenido al Tip 1!
 
 Aquí hay un ejemplo de cómo puedes formatear una página Markdown para que se vea bien en GitHub Pages.
 

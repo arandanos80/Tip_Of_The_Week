@@ -1,12 +1,23 @@
 ---
 layout: post
-title: "Tip 1: 𝐈𝐄𝐧𝐮𝐦𝐞𝐫𝐚𝐛𝐥𝐞 𝐯𝐬 𝐈𝐐𝐮𝐞𝐫𝐲𝐚𝐛𝐥𝐞 𝐯𝐬 𝐈𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧"
+title: "Tip 1: IEnumerable vs IQueryable vs ICollection"
 ---
 
-Aquí hay un ejemplo de cómo puedes formatear una página Markdown para que se vea bien en GitHub Pages.
+✅ La interfaz **IEnumerable<T>** se utiliza para iterar sobre una colección de un tipo especificado. Proporciona un único método, GetEnumerator(), que devuelve un enumerador que puede recorrer la colección.
 
-1. Utiliza Front Matter para agregar metadatos, como el título y el diseño.
-2. Escribe tu contenido en formato Markdown.
-3. Puedes incluir texto, listas, enlaces y más.
+𝐏𝐮𝐧𝐭𝐨𝐬 𝐜𝐥𝐚𝐯𝐞: 
+  1️⃣ **IEnumerable<T>** es adecuada para iteraciones en una sola dirección sobre una colección. 
+  2️⃣ Es de solo lectura, lo que significa que no se pueden agregar ni eliminar elementos de la colección.
 
-¡Espero que encuentres útil este consejo!
+
+✅ La interfaz **IQueryable<T>** extiende **IEnumerable<T>** y proporciona funcionalidad para consultar datos desde una fuente de datos. Se utiliza principalmente en LINQ to SQL y LINQ to Entities. Las consultas se construyen, pero no se ejecutan hasta que los datos son enumerados.
+𝐏𝐮𝐧𝐭𝐨𝐬 𝐜𝐥𝐚𝐯𝐞: 
+  1️⃣ Adecuada para consultar datos desde una fuente remota, como una base de datos. 
+  2️⃣ Soporta la ejecución diferida y puede optimizar las consultas.
+
+
+✅ La interfaz **ICollection<T>** extiende **IEnumerable<T>** e **IEnumerable**. Define métodos para agregar, eliminar y verificar la presencia de elementos (búsquedas). También proporciona propiedades para acceder al número de elementos y determinar si la colección es de solo lectura.
+
+𝐏𝐮𝐧𝐭𝐨𝐬 𝐜𝐥𝐚𝐯𝐞: 
+  1️⃣ Soporta operaciones como agregar, eliminar y verificar elementos. 
+  2️⃣ Proporciona la propiedad Count para obtener el número de elementos en la colección.

@@ -1,2 +1,2 @@
-# Tip_Of_The_Week
+# Tip Of The_Week
 Developer tips

@@ -25,6 +25,7 @@ feed:
 theme:
   name: jekyll-theme-primer
   version: 0.6.0  # Reemplaza con la versión específica que desees utilizar
+  title: "Tip of the week"
 
 # Configuración de Sass
 sass:

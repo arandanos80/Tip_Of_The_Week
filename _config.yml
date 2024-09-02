@@ -9,6 +9,7 @@ baseurl: ""  # Si tu repositorio no está en una subcarpeta, deja esto en blanco
 url: "https://arandanos80.github.io"  # Cambia a tu nombre de usuario
 source: docs  # Carpeta que contiene tu contenido
 destination: ./docs/Tips  # Carpeta donde se generará el sitio
+title: "Tip of the week"
 
 plugins:
   - jekyll-feed
@@ -18,9 +19,12 @@ feed:
   path: "/feed.xml"
 
 # Configuración del Tema
-theme:
-  name: jekyll-theme-primer
-  version: 0.6.0  # Reemplaza con la versión específica que desees utilizar
+# theme:
+#   name: jekyll-theme-primer
+#   version: 0.6.0  # Reemplaza con la versión específica que desees utilizar
+remote_theme: pages-themes/modernist@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Configuración de Sass
 sass:

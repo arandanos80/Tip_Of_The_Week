@@ -11,6 +11,9 @@ source: docs  # Carpeta que contiene tu contenido
 destination: ./docs/Tips  # Carpeta donde se generará el sitio
 title: "Tip of the week"
 
+site:
+  title: "Pruebas"
+
 plugins:
   - jekyll-feed
  

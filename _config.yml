@@ -21,9 +21,12 @@ feed:
   path: "/feed.xml"
 
 # Configuración del Tema
-theme:
-  name: jekyll-theme-primer
-  version: 0.6.0  # Reemplaza con la versión específica que desees utilizar
+# theme:
+#   name: jekyll-theme-primer
+#   version: 0.6.0  # Reemplaza con la versión específica que desees utilizar
+remote_theme: pages-themes/primer@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Configuración de Sass
 sass:

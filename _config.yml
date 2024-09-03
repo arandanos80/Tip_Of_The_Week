@@ -24,7 +24,7 @@ feed:
 # theme:
 #   name: jekyll-theme-primer
 #   version: 0.6.0  # Reemplaza con la versión específica que desees utilizar
-remote_theme: pages-themes/primer@v0.2.0
+remote_theme: pages-themes/primer@v0.6.0
 
 # Configuración de Sass
 sass:

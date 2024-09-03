@@ -11,6 +11,7 @@ source: docs  # Carpeta que contiene tu contenido
 destination: ./docs/Tips  # Carpeta donde se generará el sitio
 title: "Tip of the week"
 name: "Tip of the week"
+description: "Tips for developers"
 
 site:
   title: "Pruebas"

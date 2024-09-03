@@ -34,4 +34,6 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll/figure
+  - jekyll clean
+  - jekyll build
 # Otras configuraciones según tus necesidades

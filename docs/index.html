@@ -1,20 +1,27 @@
----
-layout: default
----
-<main id="content" class="main-content" role="main">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{ site.title }}</title>
+  </head>
+  <body>
+    <main id="content" class="main-content" role="main">
 
-<h1>{{ site.title }}</h1>  
-<h1>¡Consejos Útiles para developers!</h1>
+    <h1>{{ site.title }}</h1>  
+    <h1>¡Consejos Útiles para developers!</h1>
 
-<ul>
-  {% for tip in site.pages %}
-    {% if tip.path contains 'Tips' %}
-      <li><a href="/Tip_Of_The_Week{{ tip.url }}">{{ tip.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+    <ul>
+      {% for tip in site.pages %}
+        {% if tip.path contains 'Tips' %}
+          <li><a href="/Tip_Of_The_Week{{ tip.url }}">{{ tip.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
 
-<footer class="site-footer">
-  &copy; 2024 <a href="mailto:iaranda@kpmg.es">Iván Aranda</a>
-</footer>
-</main>
+    <footer class="site-footer">
+      &copy; 2024 <a href="mailto:iaranda@kpmg.es">Iván Aranda</a>
+    </footer>
+    </main>
+  </body>
+</html>

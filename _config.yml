@@ -25,8 +25,6 @@ feed:
 #   name: jekyll-theme-primer
 #   version: 0.6.0  # Reemplaza con la versión específica que desees utilizar
 remote_theme: pages-themes/primer@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Configuración de Sass
 sass:
@@ -39,4 +37,5 @@ plugins:
   - jekyll/figure
   - jekyll clean
   - jekyll build
+  - jekyll-remote-theme  
 # Otras configuraciones según tus necesidades

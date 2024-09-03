@@ -4,14 +4,14 @@
 markdown: kramdown
 
 # Configuración de GitHub Pages
-repository: arandanos80/Tip_Of_The_Week/  # Cambia a tu nombre de usuario y nombre del repositorio
+repository: arandanos80/Tip_Of_The_Week  # Cambia a tu nombre de usuario y nombre del repositorio
 baseurl: ""  # Si tu repositorio no está en una subcarpeta, deja esto en blanco
 url: "https://arandanos80.github.io"  # Cambia a tu nombre de usuario
 source: docs  # Carpeta que contiene tu contenido
 destination: ./docs/Tips  # Carpeta donde se generará el sitio
-title: Tip of the week
-name: Tip of the week
-description: Tips for developers
+title: "Tip of the week"
+name: "Tip of the week"
+description: "Tips for developers"
 
 plugins:
   - jekyll-feed

@@ -43,3 +43,4 @@ jobs:
     - name: Show commit message
       run: |
         echo "Commit message: $(git log -1 --pretty=%B)"
+        

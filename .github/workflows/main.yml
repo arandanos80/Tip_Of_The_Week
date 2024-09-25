@@ -41,4 +41,5 @@ jobs:
         ls -R $GITHUB_WORKSPACE
 
     - name: Show commit message
-      run: echo "Commit message: $(git log -1 --pretty=%B)"
+      run: |
+        echo "Commit message: $(git log -1 --pretty=%B)"

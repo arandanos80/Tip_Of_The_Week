@@ -38,6 +38,5 @@ jobs:
       run: |
         ls -R $GITHUB_WORKSPACE
 
-# Nuevo paso: Mostrar el mensaje del commit
     - name: Show commit message
       run: echo "Commit message: $(git log -1 --pretty=%B)"

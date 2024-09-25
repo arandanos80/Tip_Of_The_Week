@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # Esto obtiene todo el historial de commits
 
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1

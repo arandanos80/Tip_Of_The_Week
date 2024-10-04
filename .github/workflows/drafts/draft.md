@@ -17,4 +17,6 @@ Aquí tienes algunos beneficios de la expresión 𝙎𝙬𝙞𝙩𝙘𝙝 en C#:
 
 ❓¿Usas la instrucción Switch o la expresión Switch?
 
+
+
 ![alt text](image.png)

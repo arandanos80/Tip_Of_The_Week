@@ -1,9 +1,5 @@
 ---
 layout: post
-title: "Tip 3: Comming soon"
----
----
-layout: post
 title: "Tip 3: Switch Expression"
 ---
 

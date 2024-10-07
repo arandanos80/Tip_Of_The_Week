@@ -3,6 +3,8 @@ layout: post
 title: "Tip 3: Switch Expression"
 ---
 
+# Switch Expression
+
 🔥 La expresión 𝙎𝙬𝙞𝙩𝙘𝙝 fue introducida en C# 8. Te permite evaluar de manera eficiente una sola expresión de un conjunto de expresiones candidatas, determinando la coincidencia a través de coincidencia de patrones (pattern matching) con una expresión de entrada.
 
 🚀 Con la sintaxis "=>", la expresión 𝙎𝙬𝙞𝙩𝙘𝙝 asigna un valor correspondiente al patrón que coincide. Esto no sólo mejora la legibilidad, sino que también facilita un código más elegante y compacto. Usar el símbolo de descarte guión bajo (__) como caso por defecto le añade flexibilidad.

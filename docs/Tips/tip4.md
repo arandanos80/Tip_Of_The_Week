@@ -22,7 +22,7 @@ StringBuilder
 
 ✅ StringBuilder es más eficiente en memoria: La columna Memory asignada indica que StringBuilder consume significativamente menos memoria (26.31 KB en comparación con 3754.01 KB) que la concatenación de strings.
 
-👉 El código de ejemplo está disponible en el siguiente repositorio: enlace al repositorio
+👉 El código de ejemplo está disponible en el siguiente repositorio: <a href="https://github.com/poorna-soysa/benchmark-examples">enlace al repositorio</a>
 
 ❓ ¿Qué opinas sobre la concatenación de strings y el StringBuilder?
 

@@ -7,14 +7,14 @@ title: "Tip 4: String Concatenation vs StringBuilder Performance"
 
 🔥 En .𝗡𝗘𝗧, los String son inmutables, lo que significa que su contenido no puede cambiar una vez creado. Esto tiene implicaciones para la manipulación de cadenas.
 
-Concatenación de String
-✅ Usa el operador + para combinar cadenas.
-✅ Crea un nuevo objeto 𝙨𝙩𝙧𝙞𝙣𝙜 en cada concatenación, lo que puede generar problemas de rendimiento con grandes cantidades de concatenaciones.
+Concatenación de String <br>
+✅ Usa el operador + para combinar cadenas.<br>
+✅ Crea un nuevo objeto 𝙨𝙩𝙧𝙞𝙣𝙜 en cada concatenación, lo que puede generar problemas de rendimiento con grandes cantidades de concatenaciones.<br>
 
-StringBuilder
-✅ Representa una cadena mutable de caracteres.
-✅ Construye cadenas de manera eficiente mediante la adición de caracteres u otras cadenas.
-✅ Ideal para escenarios donde se realizan múltiples concatenaciones.
+StringBuilder<br>
+✅ Representa una cadena mutable de caracteres.<br>
+✅ Construye cadenas de manera eficiente mediante la adición de caracteres u otras cadenas.<br>
+✅ Ideal para escenarios donde se realizan múltiples concatenaciones.<br>
 
 🚀 Comparación de rendimiento
 

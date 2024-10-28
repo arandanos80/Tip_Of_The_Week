@@ -3,7 +3,7 @@ layout: post
 title: "Tip 4: String Concatenation vs StringBuilder Performance"
 ---
 
-# 𝗦𝘁𝗿𝗶𝗻𝗴 𝗖𝗼𝗻𝗰𝗮𝘁𝗲𝗻𝗮𝘁𝗶𝗼𝗻 𝘃𝘀 𝗦𝘁𝗿𝗶𝗻𝗴𝗕𝘂𝗶𝗹𝗱𝗲𝗿 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲
+# String Concatenation vs StringBuilder Performance
 
 🔥 En .𝗡𝗘𝗧, los String son inmutables, lo que significa que su contenido no puede cambiar una vez creado. Esto tiene implicaciones para la manipulación de cadenas.
 

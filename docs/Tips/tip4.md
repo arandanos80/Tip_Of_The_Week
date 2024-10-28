@@ -18,7 +18,7 @@ StringBuilder
 
 🚀 Comparación de rendimiento
 
-✅ StringBuilder es significativamente más rápido: La columna Ratio muestra claramente que StringBuilder es aproximadamente 29 veces más rápido que la concatenación de strings para 1000 registros.
+✅ StringBuilder es significativamente más rápido: La columna Ratio muestra claramente que StringBuilder es aproximadamente 32 veces más rápido que la concatenación de strings para 1000 registros.
 
 ✅ StringBuilder es más eficiente en memoria: La columna Memory asignada indica que StringBuilder consume significativamente menos memoria (26.31 KB en comparación con 3754.01 KB) que la concatenación de strings.
 

@@ -32,7 +32,7 @@ Aquí, aunque <b>var</b> podría inferir el tipo de ObtenerContador(), declarar 
 ![image](382682781-82eb7e68-aa1d-49b8-8b9e-ea6d04c34d10.png)
 <br />
 Si se usa <b>var mensaje = "Hola, mundo!";</b> se entenderá que <b>mensaje</b> es una cadena, pero usar <b>string</b> explícitamente puede hacer más claro al lector que la variable <b>mensaje</b> se espera que sea una cadena de texto.<br /><br />
-✅ Para evitar inferencias incorrectas. <br />A veces <b>var</b> puede hacer inferencias inesperadas. Por ejemplo:
+✅ Para evitar inferencias incorrectas. <br />A veces <b>var</b> puede hacer inferencias inesperadas. Por ejemplo: <br />
 ![image](382684102-e8d8015e-864c-47ce-8e86-69f433407fef.png)
 <br />
 Si realmente querías que <b>numero</b> fuera un tipo decimal, es preferible especificarlo:

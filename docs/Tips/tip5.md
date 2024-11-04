@@ -17,22 +17,22 @@ Cuando usar var puede hacer el código más claro:</strong><br /><br />
 <br />
 ![image](https://github.com/user-attachments/assets/90e48e11-19a2-4049-9a24-28b61b35cc7d)
 <br />
-Aquí, el tipo del objeto es anónimo (no tiene un nombre explícito), por lo que <b>var</b> es la única opción. <br />
+Aquí, el tipo del objeto es anónimo (no tiene un nombre explícito), por lo que <b>var</b> es la única opción. <br /><br />
 ✅ Con LINQ y otros casos de tipos inferidos. <br />Al trabajar con LINQ, <b>var</b> es útil para variables que contienen resultados de consultas donde el tipo puede ser complicado. <br />
 ![image](https://github.com/user-attachments/assets/cc265032-a5e8-4734-8946-03e17a9aa681)
 <br />
 En este caso, el tipo de resultado es IEnumerable<Persona>, lo cual puede ser un poco más largo y menos intuitivo de escribir que simplemente <b>var</b>.<br /><br />
 <strong>2️⃣ Uso del tipo explícito para mayor claridad<br /><br />
 Cuándo es preferible declarar el tipo explícitamente:</strong><br /><br />
-✅ Cuando el tipo no es obvio. <br />Si el tipo de la variable no es inmediatamente claro a partir de la asignación, es mejor declararlo explícitamente para evitar confusión.<br />
+✅ Cuando el tipo no es obvio. Si el tipo de la variable no es inmediatamente claro a partir de la asignación, es mejor declararlo explícitamente para evitar confusión.<br />
 ![image](https://github.com/user-attachments/assets/a6af583b-9b57-418c-a6da-8ceb31233107)
 <br />
 Aquí, aunque <b>var</b> podría inferir el tipo de ObtenerContador(), declarar int explícitamente aclara la intención al lector.<br />
-✅ Para mejorar la comprensión de intenciones. <br />Al usar tipos primitivos o bien conocidos, el tipo explícito puede ser más claro. Esto es particularmente útil en casos donde una simple asignación puede ser ambigua. <br />
+✅ Para mejorar la comprensión de intenciones. Al usar tipos primitivos o bien conocidos, el tipo explícito puede ser más claro. Esto es particularmente útil en casos donde una simple asignación puede ser ambigua. <br />
 ![image](https://github.com/user-attachments/assets/82eb7e68-aa1d-49b8-8b9e-ea6d04c34d10)
 <br />
 Si se usa <b>var mensaje = "Hola, mundo!";</b> se entenderá que <b>mensaje</b> es una cadena, pero usar <b>string</b> explícitamente puede hacer más claro al lector que la variable <b>mensaje</b> se espera que sea una cadena de texto.<br />
-✅ Para evitar inferencias incorrectas. <br />A veces <b>var</b> puede hacer inferencias inesperadas. Por ejemplo:
+✅ Para evitar inferencias incorrectas. A veces <b>var</b> puede hacer inferencias inesperadas. Por ejemplo:
 ![image](https://github.com/user-attachments/assets/e8d8015e-864c-47ce-8e86-69f433407fef)
 <br />
 Si realmente querías que <b>numero</b> fuera un tipo decimal, es preferible especificarlo:

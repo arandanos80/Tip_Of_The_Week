@@ -21,7 +21,7 @@ Aquí, el tipo del objeto es anónimo (no tiene un nombre explícito), por lo qu
 ✅ Con LINQ y otros casos de tipos inferidos. <br />Al trabajar con LINQ, <b>var</b> es útil para variables que contienen resultados de consultas donde el tipo puede ser complicado. <br />
 ![image](https://github.com/user-attachments/assets/cc265032-a5e8-4734-8946-03e17a9aa681)
 <br />
-En este caso, el tipo de resultado es IEnumerable<Persona>, lo cual puede ser un poco más largo y menos intuitivo de escribir que simplemente <b>var</b>.<br /><br />
+En este caso, el tipo de resultado es IEnumerable&lt;Persona&gt;, lo cual puede ser un poco más largo y menos intuitivo de escribir que simplemente <b>var</b>.<br /><br />
 <strong>2️⃣ Uso del tipo explícito para mayor claridad<br /><br />
 Cuándo es preferible declarar el tipo explícitamente:</strong><br /><br />
 ✅ Cuando el tipo no es obvio. Si el tipo de la variable no es inmediatamente claro a partir de la asignación, es mejor declararlo explícitamente para evitar confusión.<br />

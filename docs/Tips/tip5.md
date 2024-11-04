@@ -25,23 +25,23 @@ En este caso, el tipo de resultado es IEnumerable<Persona>, lo cual puede ser un
 <strong>2️⃣ Uso del tipo explícito para mayor claridad<br /><br />
 Cuándo es preferible declarar el tipo explícitamente:</strong><br /><br />
 ✅ Cuando el tipo no es obvio. Si el tipo de la variable no es inmediatamente claro a partir de la asignación, es mejor declararlo explícitamente para evitar confusión.<br />
-![alt text](382681896-a6af583b-9b57-418c-a6da-8ceb31233107.png)
+![image](382681896-a6af583b-9b57-418c-a6da-8ceb31233107.png)
 <br />
 Aquí, aunque <b>var</b> podría inferir el tipo de ObtenerContador(), declarar int explícitamente aclara la intención al lector.<br />
 ✅ Para mejorar la comprensión de intenciones. Al usar tipos primitivos o bien conocidos, el tipo explícito puede ser más claro. Esto es particularmente útil en casos donde una simple asignación puede ser ambigua. <br />
-![alt text](382682781-82eb7e68-aa1d-49b8-8b9e-ea6d04c34d10.png)
+![image](382682781-82eb7e68-aa1d-49b8-8b9e-ea6d04c34d10.png)
 <br />
 Si se usa <b>var mensaje = "Hola, mundo!";</b> se entenderá que <b>mensaje</b> es una cadena, pero usar <b>string</b> explícitamente puede hacer más claro al lector que la variable <b>mensaje</b> se espera que sea una cadena de texto.<br />
 ✅ Para evitar inferencias incorrectas. A veces <b>var</b> puede hacer inferencias inesperadas. Por ejemplo:
-![alt text](382684102-e8d8015e-864c-47ce-8e86-69f433407fef.png)
+![image](382684102-e8d8015e-864c-47ce-8e86-69f433407fef.png)
 <br />
 Si realmente querías que <b>numero</b> fuera un tipo decimal, es preferible especificarlo:
 <br />
-![alt text](382684939-2665acf8-b21c-4aef-95b8-c6954aacbf87.png)
+![image](382684939-2665acf8-b21c-4aef-95b8-c6954aacbf87.png)
 <br /><br />
 <strong>🚀 Ejemplo práctico de combinación</strong><br />
 A continuación, un ejemplo que combina <b>var</b> y tipos explícitos para hacer el código claro y fácil de leer:<br />
-![alt text](382686801-cc1b1bca-b0b9-4a24-8dc8-3c34c140dbe5.png)
+![image](382686801-cc1b1bca-b0b9-4a24-8dc8-3c34c140dbe5.png)
 <br />
 En este ejemplo, <b>mayoresADos</b> es inferido como <b>IEnumerable&lt;int&gt;</b>, que es lo que esperamos, y <b>total</b> es explícitamente <b>int</b>, lo cual puede ayudar a identificar un posible error si <b>Sum()</b> devuelviera otro tipo de dato. <br /><br />
 <strong>🔥 Recomendación general</strong><br /><br />

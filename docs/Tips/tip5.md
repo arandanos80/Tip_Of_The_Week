@@ -27,7 +27,7 @@ Cuándo es preferible declarar el tipo explícitamente:</strong><br /><br />
 ✅ Cuando el tipo no es obvio. <br />Si el tipo de la variable no es inmediatamente claro a partir de la asignación, es mejor declararlo explícitamente para evitar confusión.<br />
 ![image](https://github.com/user-attachments/assets/dfd8f4fe-b027-4a5b-b680-b69669611cad)
 <br />
-Aquí, aunque <b>var</b> podría inferir el tipo de ObtenerContador(), declarar int explícitamente aclara la intención al lector.<br />
+Aquí, aunque <b>var</b> podría inferir el tipo de ObtenerContador(), declarar int explícitamente aclara la intención al lector.<br /><br />
 ✅ Para mejorar la comprensión de intenciones. <br />Al usar tipos primitivos o bien conocidos, el tipo explícito puede ser más claro. Esto es particularmente útil en casos donde una simple asignación puede ser ambigua. <br />
 ![image](382682781-82eb7e68-aa1d-49b8-8b9e-ea6d04c34d10.png)
 <br />

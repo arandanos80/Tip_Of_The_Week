@@ -25,7 +25,7 @@ En este caso, el tipo de resultado es IEnumerable<Persona>, lo cual puede ser un
 <strong>2️⃣ Uso del tipo explícito para mayor claridad<br /><br />
 Cuándo es preferible declarar el tipo explícitamente:</strong><br /><br />
 ✅ Cuando el tipo no es obvio. Si el tipo de la variable no es inmediatamente claro a partir de la asignación, es mejor declararlo explícitamente para evitar confusión.<br />
-![image](382681896-a6af583b-9b57-418c-a6da-8ceb31233107.png)
+![382681896-a6af583b-9b57-418c-a6da-8ceb31233107](https://github.com/user-attachments/assets/dfd8f4fe-b027-4a5b-b680-b69669611cad)
 <br />
 Aquí, aunque <b>var</b> podría inferir el tipo de ObtenerContador(), declarar int explícitamente aclara la intención al lector.<br />
 ✅ Para mejorar la comprensión de intenciones. Al usar tipos primitivos o bien conocidos, el tipo explícito puede ser más claro. Esto es particularmente útil en casos donde una simple asignación puede ser ambigua. <br />

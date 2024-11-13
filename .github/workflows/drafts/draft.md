@@ -52,13 +52,11 @@ await FillBufferAsync(memoryBuffer);
 ✅ Ventaja:
 A diferencia de `Span<T>`, `Memory<T>` se puede usar en métodos asíncronos y permite un uso eficiente de la memoria para operaciones largas sin bloquear el hilo.
 
-Comparativa de Sustitución
-Tipo Antiguo	    Sustituir por	Ventaja
-`Array` y `List`	`Span<T>` o `Memory<T>`	Manipulación directa y más eficiente en subarrays, sin duplicar datos.
-`string.Substring`	`Span<char>`	Evita crear nuevas instancias de cadenas en subconjuntos, optimizando el uso de memoria.
-`byte[]`	`Memory<byte>`	Ideal para buffers de datos en operaciones asíncronas, con menos presión de GC.
-🚀 Ventajas de `Span<T>` y `Memory<T>`
-Reducción de Asignaciones: No se crean copias de datos, lo que mejora el rendimiento y reduce el consumo de memoria.
-Mejoras en el Garbage Collection: Menos presión de recolección de basura, ya que `Span<T>` y `Memory<T>` permiten trabajar con datos existentes en memoria.
-Optimización en Subconjuntos: Se pueden manipular secciones de datos grandes de forma segura y eficiente.
+<b>Comparativa de Sustitución</b><br />
+![image](https://github.com/user-attachments/assets/927030b8-161c-417d-985f-90f34ae21624)
+<br />
+🚀 Ventajas de `Span<T>` y `Memory<T>`<br />
+Reducción de Asignaciones: No se crean copias de datos, lo que mejora el rendimiento y reduce el consumo de memoria.<br />
+Mejoras en el Garbage Collection: Menos presión de recolección de basura, ya que `Span<T>` y `Memory<T>` permiten trabajar con datos existentes en memoria.<br />
+Optimización en Subconjuntos: Se pueden manipular secciones de datos grandes de forma segura y eficiente.<br />
 Estos tipos de datos son especialmente útiles en aplicaciones de alto rendimiento o en servicios donde la eficiencia de memoria es crítica. ¡Espero que este tip te sea útil!

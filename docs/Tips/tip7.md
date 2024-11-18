@@ -5,7 +5,7 @@ title: "Tip 7:  Uso de Span<T> y Memory<T>"
 
 #  Uso de `Span<T>` y `Memory<T>`
 
-💡 Uso de `Span<T>` y `Memory<T>` para Manipulación Eficiente de Datos en Memoria<br />
+💡 <b>Uso de `Span<T>` y `Memory<T>` para Manipulación Eficiente de Datos en Memoria</b><br />
 Introducidos en .𝗡𝗘𝗧 𝗖𝗼𝗿𝗲 𝟮.𝟭, los tipos `Span<T>` y `Memory<T>` ofrecen una forma eficiente de trabajar con subconjuntos de datos en memoria sin realizar copias adicionales. Estos tipos permiten manipular subconjuntos de arrays, cadenas de texto y buffers sin el coste de la asignación de memoria adicional, ayudando a evitar el garbage collection excesivo.
 
 🟢 <b>Ejemplo 1:</b> Uso de `Span<T>` en arrays<br/>

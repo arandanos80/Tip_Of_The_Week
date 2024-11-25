@@ -3,7 +3,7 @@ layout: post
 title: "Tip 8: Default values para Tipos Genéricos"
 ---
 # Default values para Tipos Genéricos
-En C# 12, ahora puedes asignar valores predeterminados a los parámetros de tipo genéricos de tus métodos, clases o interfaces. Esta característica simplifica el uso de genéricos y mejora la legibilidad y flexibilidad del código.<br />
+En C# 12, ahora puedes asignar valores predeterminados a los parámetros de tipo genéricos de tus métodos, clases o interfaces. Esta característica simplifica el uso de genéricos y mejora la legibilidad y flexibilidad del código.<br /><br />
 🚀 **Antes de C# 12** <br />
 Antes, para usar un valor predeterminado en un parámetro genérico, debías establecerlo manualmente en cada instancia o utilizar verificaciones adicionales dentro del método. <br /><br />
 **Ejemplo:**
@@ -17,7 +17,7 @@ El código anterior genera un error porque no se permitían valores predetermina
 
 🆕 **C# 12: Default values para Tipos Genéricos**<br/>
 Ahora puedes asignar un valor predeterminado directamente al parámetro genérico. Esto simplifica el diseño y reduce la cantidad de código redundante.<br /><br />
-**Ejemplo**
+**Ejemplo:**
 ```c#
 public T MetodoGenerico<T = int>(T valor = default)
 {
@@ -28,7 +28,7 @@ Con esta sintaxis:
 - Si el usuario no proporciona un tipo, T será int por defecto.
 - Si no proporciona un valor, valor será 0 (el valor predeterminado para int). <br /><br />
 
-🔧 **Ejemplo Práctico** <br /><br />
+🔧 **Ejemplo Práctico:** <br /><br />
 **Definición:**<br />
 ```c#
 // Uso en un método
@@ -48,10 +48,10 @@ var resultado2 = MetodoGenerico<int>(); // Resultado: 0
 // Caso 3: Se proporciona un valor explícito
 var resultado3 = MetodoGenerico("Hola Mundo"); // Resultado: "Hola Mundo"
 ```
-💡 **Ventajas** <br />
-**1. Menos Código Redundante:** No necesitas inicializar manualmente valores predeterminados en cada instancia.<br />
-**2. Mayor Flexibilidad:** Puedes definir comportamientos predecibles sin requerir sobrecargas adicionales.<br />
-**3. Mejor Legibilidad:** Los valores predeterminados ayudan a entender las intenciones del código.<br />
+💡 **Ventajas:** <br />
+1. **Menos Código Redundante:** No necesitas inicializar manualmente valores predeterminados en cada instancia.<br />
+2. **Mayor Flexibilidad:** Puedes definir comportamientos predecibles sin requerir sobrecargas adicionales.<br />
+3. **Mejor Legibilidad:** Los valores predeterminados ayudan a entender las intenciones del código.<br />
 <table>
     <thead>
         <tr style="background-color: #e5e5e5">

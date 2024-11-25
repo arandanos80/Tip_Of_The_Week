@@ -39,11 +39,11 @@ public T MetodoGenerico<T = string>(T valor = default)
 ```
 **Uso:** <br />
 ```c#
-// Caso 1: Se usa el tipo predeterminado (int)
-var resultado1 = MetodoGenerico(); // Resultado: 0
+// Caso 1: Se usa el tipo predeterminado (string)
+var resultado1 = MetodoGenerico(); // Resultado: null
 
 // Caso 2: Se proporciona un tipo explícito
-var resultado2 = MetodoGenerico<string>(); // Resultado: null
+var resultado2 = MetodoGenerico<int>(); // Resultado: 0
 
 // Caso 3: Se proporciona un valor explícito
 var resultado3 = MetodoGenerico("Hola Mundo"); // Resultado: "Hola Mundo"

@@ -6,10 +6,18 @@ title: "Tip of the week"
 <h1>¡Consejos Útiles para developers!</h1>
 
 <ul>
-  {% for tip in site.pages %}
-    {% if tip.path contains 'Tips' %}
-      <li><a href="/Tip_Of_The_Week{{ tip.url }}">{{ tip.title }}</a></li>
-    {% endif %}
+  {% assign tips = site.pages | where: "path", "Tips" %}
+  {% assign sorted_tips = tips | sort: "title" %}
+
+  {% assign sorted_list = "" %}
+  {% for tip in tips %}
+    {% assign tip_number = tip.title | remove: "tip" | plus: 0 %}
+    {% assign sorted_list = sorted_list | push: { "number": tip_number, "tip": tip } %}
+  {% endfor %}
+
+  {% assign sorted_list = sorted_list | sort: "number" %}
+  {% for item in sorted_list %}
+    <li><a href="/Tip_Of_The_Week{{ item.tip.url }}">{{ item.tip.title }}</a></li>
   {% endfor %}
 </ul>
 

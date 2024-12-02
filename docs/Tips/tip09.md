@@ -5,7 +5,7 @@ title: "Tip 9: Primary Constructors para Clases y Structs"
 # Primary Constructors para Clases y Structs
 🚀 **¿Qué son los Primary Constructors?**\
 En **C# 12**, los *Primary Constructors* se extienden a clases y structs (inicialmente introducidos en *record* en **C# 9**).\
-Con esta característica, puedes definir directamente los parámetros del constructor en la declaración de la clase o struct. Estos valores estarán disponibles en todo el cuerpo de la clase, simplificando la inicialización y reduciendo el código redundante.\
+Con esta característica, puedes definir directamente los parámetros del constructor en la declaración de la clase o struct. Estos valores estarán disponibles en todo el cuerpo de la clase, simplificando la inicialización y reduciendo el código redundante.  
 
 ✅ **Ventajas**
 1. **Sintaxis Concisa:**\
@@ -15,7 +15,7 @@ Es claro qué valores necesita un objeto al momento de su creación.
 3. **Menos Código Boilerplate:**\
 No necesitas escribir manualmente el constructor y las asignaciones de propiedades.
 4. **Ideal para Dependency Injection:**\
-Facilita la inyección de dependencias en aplicaciones modernas.\
+Facilita la inyección de dependencias en aplicaciones modernas.  
 
 🔧 **Requisitos Previos**\
 Para usar esta característica, necesitas:

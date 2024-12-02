@@ -8,13 +8,22 @@
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <generator>Jekyll</generator>
 
-    {% for post in site.posts %}
+    {% assign tips = site.pages | where: "layout", "tip" %}
+    {% assign sorted_tips = tips | sort: "title" %}
+    
+    {% for page in sorted_tips %}
+      {% assign tip_number = page.title | remove: "tip" | remove: ".md" | plus: 0 %}
+      {% assign sorted = sorted | push: { "number": tip_number, "page": page } %}
+    {% endfor %}
+    
+    {% assign sorted_tips = sorted | sort: "number" %}
+    {% for tip in sorted_tips %}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <link>{{ post.url | absolute_url }}</link>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
-        <description>{{ post.excerpt | xml_escape }}</description>
+        <title>{{ tip.page.title }}</title>
+        <link>{{ tip.page.url | absolute_url }}</link>
+        <pubDate>{{ tip.page.date | date_to_rfc822 }}</pubDate>
+        <guid isPermaLink="true">{{ tip.page.url | absolute_url }}</guid>
+        <description>{{ tip.page.excerpt }}</description>
       </item>
     {% endfor %}
   </channel>

@@ -3,7 +3,7 @@ layout: post
 title: "Tip 10: Diferencias entre Const y Readonly"
 ---
 # Diferencias entre Const y Readonly  
-🔑 **Introducción**  
+### 🔑 **Introducción**  
 Las palabras clave **const** y **readonly** en **C#** tienen como objetivo evitar modificaciones en las variables después de su inicialización, pero su uso y propósito tienen diferencias importantes.  
 
 ### ✅ **Características clave**  

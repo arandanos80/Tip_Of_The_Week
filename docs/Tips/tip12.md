@@ -77,4 +77,4 @@ WHERE RowResult.RowNum > 10
 
 
 ### 💡 Extra Tip  
-Antes de usar paginación, siempre incluye un método OrderBy() en tu consulta para garantizar resultados consistentes, ya que sin un orden definido, los resultados pueden ser impredecibles.
+Antes de usar paginación, siempre incluye un método ```OrderBy()``` en tu consulta para garantizar resultados consistentes, ya que sin un orden definido, los resultados pueden ser impredecibles.

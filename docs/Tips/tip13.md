@@ -13,7 +13,7 @@ title: "Tip 13: Eficiencia con AsParallel en LINQ"
 - Si las operaciones dentro de la consulta **no tienen dependencias entre sí.**
 - En escenarios donde las consultas sean **CPU-bound** (es decir, tareas intensivas de CPU).
 
-### 🔷 Ejemplo: Procesamiento de Datos Sin Paralelismo
+### 🔷 Ejemplo: Procesamiento de Imágenes Sin Paralelismo
 ```c#
 public class ImageProcessor
 {

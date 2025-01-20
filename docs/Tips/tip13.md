@@ -15,22 +15,87 @@ title: "Tip 13: Eficiencia con AsParallel en LINQ"
 
 ### 🔷 Ejemplo: Procesamiento de Datos Sin Paralelismo
 ```c#
-var numbers = Enumerable.Range(1, 10_000_000);
-var evenNumbers = numbers
-    .Where(n => n % 2 == 0)
-    .Select(n => n * n)
-    .ToList();
+public class ImageProcessor
+{
+    public void ProcessImages(string[] imagePaths, string outputFolder)
+    {
+        foreach (var path in imagePaths)
+        {
+            var image = Image.FromFile(path);
+            var processedImage = ApplyGrayscaleFilter(image);
+            var outputFilePath = Path.Combine(outputFolder, Path.GetFileName(path));
+            processedImage.Save(outputFilePath, ImageFormat.Jpeg);
+        }
+    }
+
+    private Image ApplyGrayscaleFilter(Image original)
+    {
+        var bitmap = new Bitmap(original.Width, original.Height);
+
+        using (var graphics = Graphics.FromImage(bitmap))
+        {
+            var colorMatrix = new ColorMatrix(new float[][]
+            {
+                new float[] { 0.3f, 0.3f, 0.3f, 0, 0 },
+                new float[] { 0.59f, 0.59f, 0.59f, 0, 0 },
+                new float[] { 0.11f, 0.11f, 0.11f, 0, 0 },
+                new float[] { 0, 0, 0, 1, 0 },
+                new float[] { 0, 0, 0, 0, 1 }
+            });
+
+            var attributes = new ImageAttributes();
+            attributes.SetColorMatrix(colorMatrix);
+
+            graphics.DrawImage(original, new Rectangle(0, 0, bitmap.Width, bitmap.Height),
+                0, 0, original.Width, original.Height, GraphicsUnit.Pixel, attributes);
+        }
+
+        return bitmap;
+    }
+}
 ```
 🔸 **Problema:** Aunque funcional, este enfoque procesa los datos de forma secuencial, utilizando solo un núcleo de la CPU.  
 
 ### 🔷 Ejemplo: Procesamiento Paralelo con ```AsParallel()```
 ```c#
-var numbers = Enumerable.Range(1, 10_000_000);
-var evenNumbers = numbers
-    .AsParallel()
-    .Where(n => n % 2 == 0)
-    .Select(n => n * n)
-    .ToList();
+public class ImageProcessor
+{
+    public void ProcessImages(string[] imagePaths, string outputFolder)
+    {
+        imagePaths.AsParallel().ForAll(path =>
+        {
+            var image = Image.FromFile(path);
+            var processedImage = ApplyGrayscaleFilter(image);
+            var outputFilePath = Path.Combine(outputFolder, Path.GetFileName(path));
+            processedImage.Save(outputFilePath, ImageFormat.Jpeg);
+        });
+    }
+
+    private Image ApplyGrayscaleFilter(Image original)
+    {
+        var bitmap = new Bitmap(original.Width, original.Height);
+
+        using (var graphics = Graphics.FromImage(bitmap))
+        {
+            var colorMatrix = new ColorMatrix(new float[][]
+            {
+                new float[] { 0.3f, 0.3f, 0.3f, 0, 0 },
+                new float[] { 0.59f, 0.59f, 0.59f, 0, 0 },
+                new float[] { 0.11f, 0.11f, 0.11f, 0, 0 },
+                new float[] { 0, 0, 0, 1, 0 },
+                new float[] { 0, 0, 0, 0, 1 }
+            });
+
+            var attributes = new ImageAttributes();
+            attributes.SetColorMatrix(colorMatrix);
+
+            graphics.DrawImage(original, new Rectangle(0, 0, bitmap.Width, bitmap.Height),
+                0, 0, original.Width, original.Height, GraphicsUnit.Pixel, attributes);
+        }
+
+        return bitmap;
+    }
+}
 ```
 🔹 **Ventaja:** Esta versión utiliza todos los núcleos de la CPU disponibles, acelerando la operación en hardware multinúcleo.  
 
@@ -52,6 +117,7 @@ var evenNumbers = numbers
       <td>Paralelo (con PLINQ)</td>
       <td>Mejor rendimiento en hardware multinúcleo.</td>
       <td>Sobrecarga por manejo de hilos y no siempre es más rápido para colecciones pequeñas.</td>
+    </tr>
   </tbody>
 </table>
 

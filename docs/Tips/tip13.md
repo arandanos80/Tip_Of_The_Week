@@ -2,6 +2,8 @@
 layout: post
 title: "Tip 13: Eficiencia con AsParallel en LINQ"
 ---
+# Eficiencia con AsParallel en LINQ  
+
 ### 🔍 ¿Qué es ```AsParallel()```?  
 ```AsParallel()``` es una extensión del espacio de nombres ```System.Linq``` que permite ejecutar consultas LINQ de manera paralela utilizando **Parallel LINQ (PLINQ)**, lo cual puede mejorar significativamente el rendimiento en tareas de cálculo intensivo o en operaciones que pueden ejecutarse en paralelo.  
 

@@ -113,6 +113,7 @@ public class ImageProcessor
       <td>Secuencial (sin PLINQ)</td>
       <td>Fácil de leer y predecible</td>
       <td>Más lento en escenarios intensivos</td>
+    </tr>
     <tr>
       <td>Paralelo (con PLINQ)</td>
       <td>Mejor rendimiento en hardware multinúcleo.</td>

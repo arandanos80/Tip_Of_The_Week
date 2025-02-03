@@ -96,7 +96,7 @@ Aquí la inicialización imprime "Inicializando ExpensiveObject...", pero solo c
   </tbody>
 </table>   
 
-### 🔧 Cuándo Usar Lazy<T>
+### 🔧 Cuándo Usar ```Lazy<T>```
 ✅ Cuando el objeto es **pesado de inicializar** y puede que **nunca se use**.  
 ✅ Cuando queremos **optimizar el rendimiento y el uso de memoria** en aplicaciones con recursos limitados.  
 ✅ Cuando queremos asegurar que un objeto **se crea de forma segura en entornos multi-hilo**, ya que ```Lazy<T>``` maneja esto automáticamente.  

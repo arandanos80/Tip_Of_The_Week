@@ -66,7 +66,7 @@ class MyClass
     }
 }
 ```
-Aquí la inicialización imprime "Inicializando ExpensiveObject...", pero solo cuando realmente se accede al objeto.
+Aquí la inicialización imprime "Inicializando ExpensiveObject...", pero sólo cuando realmente se accede al objeto.
 
 ### 🔷 Comparación con inicialización normal  
 <table>

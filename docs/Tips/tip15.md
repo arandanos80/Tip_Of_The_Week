@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tip 15: Lazy<T>: Inicialización diferida para mejor rendimiento"
+title: "Tip 15: Lazy&lt;T&gt;: Inicialización diferida para mejor rendimiento"
 ---
 # ```Lazy<T>```: Inicialización diferida para mejor rendimiento
 ### 🔑 **Introducción**
@@ -96,10 +96,10 @@ Aquí la inicialización imprime "Inicializando ExpensiveObject...", pero solo c
   </tbody>
 </table>   
 
-### Cuándo Usar Lazy<T>
-✅ Cuando el objeto es **pesado de inicializar** y puede que **nunca se use**.
-✅ Cuando queremos **optimizar el rendimiento y el uso de memoria** en aplicaciones con recursos limitados.
-✅ Cuando queremos asegurar que un objeto **se crea de forma segura en entornos multi-hilo**, ya que ```Lazy<T>``` maneja esto automáticamente.
+### 🔧 Cuándo Usar Lazy<T>
+✅ Cuando el objeto es **pesado de inicializar** y puede que **nunca se use**.  
+✅ Cuando queremos **optimizar el rendimiento y el uso de memoria** en aplicaciones con recursos limitados.  
+✅ Cuando queremos asegurar que un objeto **se crea de forma segura en entornos multi-hilo**, ya que ```Lazy<T>``` maneja esto automáticamente.  
 
 ### 💡 Conclusión
 ```Lazy<T>``` es una herramienta poderosa para mejorar el **rendimiento y la eficiencia de memoria**, asegurando que los objetos sólo se creen **cuando realmente se necesitan**. Si trabajas con objetos costosos en términos de CPU o memoria, esta técnica puede ayudarte a optimizar tu código. 

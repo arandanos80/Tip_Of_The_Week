@@ -21,17 +21,17 @@ Para definir servicios con una clave específica, se utilizan los nuevos método
   </thead>
   <tbody>
     <tr>
-      <td>AddKeyedSingleton<TService>(key, implementation)</td>
+      <td>AddKeyedSingleton&lt;TService&gt;(key, implementation)</td>
       <td>Singleton</td>
       <td>Instancia única para toda la aplicación.</td>
     </tr>
     <tr>
-      <td>AddKeyedScoped<TService>(key, implementation)</td>
+      <td>AddKeyedScoped&lt;TService&gt;(key, implementation)</td>
       <td>Scoped</td>
       <td>Nueva instancia en cada petición (web request o scope).</td>
     </tr>
     <tr>
-      <td>AddKeyedTransient<TService>(key, implementation)</td>
+      <td>AddKeyedTransient&lt;TService&gt;(key, implementation)</td>
       <td>Transient</td>
       <td>Nueva instancia cada vez que se resuelve el servicio.</td>
     </tr>

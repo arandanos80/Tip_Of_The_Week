@@ -111,6 +111,7 @@ else if (type == "SMS")
 📌 **Problema:** Menos flexible, difícil de escalar cuando hay muchas implementaciones.  
 
 🔹 **Con Keyed Services en .NET 8, estas soluciones ya no son necesarias** porque DI se encarga de todo.  
+
 📌 **Resumen de las ventajas:**
 <table>
   <thead>

@@ -77,7 +77,7 @@ notificationService?.Send("Mensaje enviado por SMS");
 ### 🔹 Comparación con Implementaciones Clásicas
 Antes de .NET 8, la forma típica de gestionar múltiples implementaciones de una misma interfaz en DI era:
 
-1️⃣ **Mediante Factories o Func<T>**
+1️⃣ **Mediante Factories o Func&lt;T&gt;**
 ```c#
 public class NotificationServiceFactory
 {

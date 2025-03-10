@@ -14,7 +14,7 @@ Estos nuevos métodos ayudan a reducir código repetitivo y mejorar la legibilid
 ### 🚀 **Nuevas funcionalidades en .NET 8**  
 ✅ **ArgumentException**  
 
-🔹 ```ThrowIfNullOrWhiteSpace(string?, string)``` ➜ Lanza una excepción si el string es null, vacío o solo contiene espacios en blanco.</span>
+🔹 ```ThrowIfNullOrWhiteSpace(string?, string)``` ➜ Lanza una excepción si el string es null, vacío o solo contiene espacios en blanco.  
 
 ✅ **ArgumentOutOfRangeException**  
 

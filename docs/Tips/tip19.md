@@ -96,12 +96,29 @@ Si ShippingAddress falla, el error dirá:
 "El parámetro 'order.ShippingAddress' no puede ser nulo ni estar vacío."
 ```
 
-### 🌟 Ventajas
-| Característica | Beneficio |
-| -------- | ------- |
-| Captura automática del argumento | No necesitas escribir el nombre del parámetro manualmente |
-| Mejores mensajes de error | Más claridad en logs y excepciones |
-| Útil en librerías reutilizables | Mejora la trazabilidad cuando múltiples métodos llaman a tus validadores |
+### 🌟 Ventajas  
+<table>
+  <thead>
+    <tr style="background-color: #e5e5e5">
+      <th>Característica</th>
+      <th>Beneficio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Captura automática del argumento</td>
+      <td>No necesitas escribir el nombre del parámetro manualmente</td>
+    </tr>
+    <tr>
+      <td>Mejores mensajes de error</td>
+      <td>Más claridad en logs y excepciones</td>
+    </tr>
+    <tr>
+      <td>Útil en librerías reutilizables</td>
+      <td>Mejora la trazabilidad cuando múltiples métodos llaman a tus validadores</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ### 🧪 Usos comunes  
